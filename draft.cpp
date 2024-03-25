@@ -11,8 +11,21 @@ int count(int num)
     return cnt;
 }
 
+
+void swap(int *a,int *b)
+{
+    a,b = b,a;
+}
+
+
 int main()
 {
-    cout<<count(7)<<endl;
+    // 
+    int a = 1;
+    int b = 2;
+    cout<<a<<" "<<b<<endl;
+    swap(a,b);
+    cout<<a<<" "<<b<<endl;
+    // cout<<count(7)<<endl;
     return 0;
 }

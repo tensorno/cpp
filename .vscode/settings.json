@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "string.h": "c",
+        "stdio.h": "c",
+        "*.tcc": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "cstdlib": "c",
+        "system_error": "c",
+        "typeinfo": "c",
+        "random": "c",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    },
+    "terminal.integrated.autoReplies": {
+
+    }
+}
