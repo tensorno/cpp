@@ -11,7 +11,8 @@
         "typeinfo": "c",
         "random": "c",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "functional": "cpp"
     },
     "terminal.integrated.autoReplies": {
 

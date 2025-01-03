@@ -20,7 +20,10 @@ public:
         int n = graph.size();
         vector<int> dist(n,INT_MAX/2);
         dist[node1] = 0;
-        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>> pq;
+        auto cmp = [](pair<int, int> a, pair<int, int> b) {
+        return a.first > b.first;
+        };
+        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> pq(cmp);
         pq.push({0,node1});
         while(!pq.empty())
         {

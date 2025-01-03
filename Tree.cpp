@@ -7,8 +7,6 @@ struct TreeNode {
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-    
-
 };
 
 // 中序遍历
@@ -20,6 +18,7 @@ void recoverTree(TreeNode *root)
     // 就是在左子树上的最后一个遍历到的节点添加一个路线 就是左子树上的最右边节点添加一个路径指向了root节点
     // 如果说已经有了这个关系说明了已经遍历了左子树 那么我们就访问右子树
     TreeNode* predecessor = nullptr;
+    TreeNode* first = nullptr;
     while (root != nullptr)
     {
         if (root->left != nullptr)
