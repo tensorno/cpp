@@ -88,7 +88,7 @@ int knapsack_greedy(vector<int> weights, vector<int> values, int V)
 }
 
 
-int knapsack_ptas(vector<int> weights, vector<int> values, int V)
+int knapsack_dp(vector<int> weights, vector<int> values, int V)
 {
     int n = weights.size();
     int max_value = *max_element(values.begin(), values.end());
@@ -147,10 +147,8 @@ int knapsack_fptas(vector<int> weights, vector<int> values, int V, double epsilo
     {
         values[i] = values[i] / K;
     }
-    return knapsack_ptas(weights, values, V);
+    return knapsack_dp(weights, values, V);
 }
-
-
 
 
 int main()
